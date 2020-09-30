@@ -77,3 +77,17 @@ If weights are available locally, they will be used. Otherwise, they will be aut
 ## References
 
 - [yolov3-tf2](https://github.com/zzh8829/yolov3-tf2)
+
+## Test
+
+Download model
+
+https://github.com/AlexeyAB/darknet#how-to-evaluate-ap-of-yolov4-on-the-ms-coco-evaluation-server
+
+```
+# Transfer model
+convert-darknet-weights yolov4.weights -o yolov4.h5
+
+# Run
+python test.py
+```

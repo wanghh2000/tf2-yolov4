@@ -192,10 +192,10 @@ def download_darknet_weights(yolov4_model):
             target_size=YOLOV4_DARKNET_FILE_SIZE,
         )
 
-    print("Converting original Darknet weights to .h5 format")
+    print("Converting original Darknet weights to .h5 format: " +
+          str(DARKNET_WEIGHTS_PATH))
     yolov4 = load_darknet_weights_in_yolo(
         yolov4_model, str(DARKNET_ORIGINAL_WEIGHTS_PATH)
     )
     yolov4.save_weights(str(DARKNET_WEIGHTS_PATH))
-
     return DARKNET_WEIGHTS_PATH
