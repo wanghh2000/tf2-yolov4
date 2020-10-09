@@ -1,5 +1,5 @@
-import cv2
-import tensorflow as tf
+# import cv2
+# import tensorflow as tf
 import matplotlib.pyplot as plt
 
 from tf2_yolov4.anchors import YOLOV4_ANCHORS
